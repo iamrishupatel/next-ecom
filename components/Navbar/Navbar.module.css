@@ -1,0 +1,152 @@
+.nav {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 0 4rem;
+}
+.nav h1 {
+  font-style: italic;
+  font-weight: 700;
+}
+.nav ul {
+  display: flex;
+  align-items: center;
+}
+.nav li {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 1rem;
+  cursor: pointer;
+  height: 100%;
+}
+
+.nav a {
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 1.4rem;
+}
+
+.header {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #1e1e1e;
+  padding: 0rem 5rem;
+  font-size: 0.8rem;
+  color: #fefefe;
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #1e1e1e;
+  padding: 0rem 5rem;
+  font-size: 0.8rem;
+  color: #fefefe;
+  display: flex;
+  align-items: center;
+}
+
+.header p {
+  margin: 0 0.4rem;
+  margin-right: 1rem;
+}
+
+.header a {
+  display: flex;
+  background-color: #fefefe;
+  border-radius: 0.4rem;
+  padding: 0.4rem 0.6rem;
+}
+
+.active a {
+  color: var(--primary-700);
+  position: relative;
+  font-weight: 600;
+}
+
+.hamburger,
+.hidenav {
+  display: none;
+}
+
+.hamburger {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 38px;
+}
+.hamburger span {
+  display: block;
+  border-radius: 1rem;
+  background-color: var(--neutral-800);
+  transition: 0.2s ease-in-out;
+  transform-origin: center;
+  margin: 4px 0;
+  height: 3px;
+  width: 38px;
+}
+
+#hamburgerActive span:nth-child(1) {
+  transform: translateY(11px) rotateZ(-45deg);
+}
+#hamburgerActive span:nth-child(2) {
+  transform: translateX(10px);
+  opacity: 0;
+}
+#hamburgerActive span:nth-child(3) {
+  transform: translateY(-11px) rotateZ(45deg);
+}
+
+@media screen and (max-width: 786px) {
+  .nav {
+    padding: 0 1rem;
+    position: relative;
+  }
+  .nav li {
+    height: fit-content;
+    font-size: 1.4rem;
+  }
+  .nav ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 100;
+    background: var(--primary-100);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    transition: 0.2s;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+  }
+
+  .nav .activeNav {
+    max-height: fit-content;
+    overflow: visible;
+    opacity: 1;
+    padding: 2rem 0;
+  }
+
+  .hamburger,
+  .hidenav {
+    display: flex;
+    font-size: 1.6rem;
+    align-items: center;
+  }
+
+  .header {
+    padding-right: 1rem;
+  }
+}

@@ -1,0 +1,39 @@
+.sidebar {
+  height: calc(100vh - 7rem);
+  width: 16rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  margin-left: 2rem;
+}
+
+.sidebar a {
+  padding: 1rem 2rem;
+  display: flex;
+  background-color: var(--neutral-0);
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.activeLink a {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  background-color: var(--primary-700);
+  color: var(--neutral-100);
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    flex-direction: row;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    padding-top: 1rem;
+    width: 100%;
+  }
+  .sidebar ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+  }
+}

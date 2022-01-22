@@ -1,0 +1,14 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.4rem;
+}
+.icon {
+  margin-right: 0.4rem;
+}
+
+.crumb {
+  display: flex;
+  align-items: center;
+}

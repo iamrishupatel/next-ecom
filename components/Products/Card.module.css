@@ -1,0 +1,90 @@
+.cardContainer {
+  background-color: var(--neutral-0);
+  color: var(--netral-600);
+  min-height: 24rem;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 10px var(--neutral-150);
+  transition: 0.2s;
+  cursor: pointer;
+  border: 1px solid var(--neutral-200);
+  position: relative;
+}
+.cardContainer:hover {
+  box-shadow: 0 0 10px var(--neutral-300);
+  transform: translateY(-10px);
+}
+
+.image {
+  display: flex;
+  height: 16rem;
+  border-bottom: 1px solid var(--neutral-150);
+}
+
+.image img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.4em 0.4em 0 0;
+}
+
+.details {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.details a {
+  text-decoration: underline;
+}
+.details h2 {
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+}
+.details h3 {
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.desc {
+  height: 5rem;
+  font-size: 0.8rem;
+  word-wrap: break-word;
+  overflow: hidden;
+  margin-bottom: 0.4rem;
+  text-overflow: ellipsis;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wishlist {
+  font-size: 1.4rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  right: 0;
+  background-color: var(--primary-200);
+  border-top-right-radius: 0.4rem;
+  padding: 1rem;
+  z-index: 10;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cardContainer:hover ~ .wishlist {
+  transform: translateY(-10px);
+}
+@media screen and (max-width: 880px) {
+  .cardContainer:hover {
+    transform: translateY(0px);
+  }
+  .cardContainer:hover ~ .wishlist {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,700;1,800&display=swap");
+
+:root {
+  --primary-700: #271fe0;
+  --primary-600: #4945ff;
+  --primary-500: #7b79ff;
+  --primary-200: #d9d8ff;
+  --primary-100: #f0f0f0;
+
+  --success-700: #2f6846;
+  --success-600: #328048;
+  --success-500: #5cb176;
+  --success-200: #c6f0c2;
+  --success-100: #eafbe7;
+
+  --danger-700: #b72b1a;
+  --danger-600: #d02b20;
+  --danger-500: #ee5e52;
+  --danger-200: #f5c0b8;
+  --danger-100: #fcecea;
+
+  --neutral-900: #212134;
+  --neutral-800: #32324d;
+  --neutral-700: #4a4a6a;
+  --neutral-600: #666687;
+  --neutral-500: #8e8ea9;
+  --neutral-400: #a5a5ba;
+  --neutral-300: #c0c0cf;
+  --neutral-200: #dcdce4;
+  --neutral-150: #eaeaef;
+  --neutral-100: #f6f6f6;
+  --neutral-0: #fff;
+
+  --heading-font: "Montserrat", sans-serif;
+  --body-font: "Poppins", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--neutral-150);
+  color: var(--neutral-900);
+  font-family: var(--body-font);
+}
+
+input,
+textarea,
+span,
+button,
+label {
+  font-family: var(--body-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--neutral-900);
+  font-family: var(--heading-font);
+}
+
+/*  utils */
+.flex-1 {
+  flex: 1;
+}
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+.d-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-col {
+  flex-direction: column;
+}
+.success-text {
+  color: var(--success-500);
+}
+
+.icon {
+  font-size: 1.4rem;
+}
+
+.bg-white {
+  background-color: var(--neutral-0);
+}
+
+/* util ends */
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--neutral-900);
+}
+
+main {
+  min-height: calc(100vh - 10rem);
+}
+
+.react-markdown ul {
+  list-style: disc;
+  padding-left: 2rem;
+}
+
+.react-markdown img {
+  width: 100%;
+  margin: 1rem 0;
+}
+.react-markdown p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.4rem 0;
+}
+
+
+
+
+
+.loader {
+  border: 4px solid var(--neutral-100);
+  border-top: 4px solid var(--neutral-600);
+  border-radius: 50%;
+  width: 1.4rem;
+  height: 1.4rem;
+  animation: spin 0.4s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rmsc {
+  --rmsc-main: var(--primary-700) !important;
+  --rmsc-selected: var(--primary-100) !important;
+}
+

@@ -1,0 +1,54 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input[type="file"] {
+  display: none;
+}
+
+.formfield {
+  margin: 0.4rem 0;
+}
+.form button {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+.formfield span {
+  font-size: 0.7rem;
+  color: var(--neutral-600);
+}
+.preview {
+  display: flex;
+  flex-direction: column;
+}
+.preview p {
+  font-size: 0.8rem;
+}
+.preview img {
+  object-fit: contain;
+  height: inherit;
+  width: inherit;
+}
+
+.imageWrapper {
+  height: 10rem;
+  width: 100%;
+}
+
+#cover {
+  display: none;
+}
+.select-file {
+  border: 2px dashed var(--neutral-150);
+
+  width: fit-content;
+  width: 12rem;
+  height: 2.6rem;
+  cursor: pointer;
+}
+.button {
+  width: 12rem;
+  height: 2.6rem;
+}

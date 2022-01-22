@@ -1,0 +1,28 @@
+.user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user img {
+  border-radius: 100%;
+  height: 6rem;
+  width: 6rem;
+  border: 4px solid var(--success-600);
+}
+.user div {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+
+.link {
+  margin: 0 4px;
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--primary-700);
+}

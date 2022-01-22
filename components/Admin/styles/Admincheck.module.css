@@ -1,0 +1,19 @@
+.admincheck {
+  display: flex;
+}
+
+.admincheck main {
+  height: calc(100vh - 7rem);
+  overflow-y: scroll;
+  width: 100%;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .admincheck {
+    flex-direction: column;
+  }
+  .admincheck main {
+    padding: 0;
+  }
+}
